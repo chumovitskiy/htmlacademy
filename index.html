@@ -1,51 +1,43 @@
 <!DOCTYPE html>
-<!--TODO
-·	Якорные ссылки в навигации должны вести на соответствующие секции
-·	Ссылка «Оставить заявку» в разделе «Поможем сделать вашу квартиру уютнее» должна вести на секцию с формой «Оставить заявку» внизу страницы.
-·	Все элементы навигации в шапке страницы должны вести на соответствующие разделы, то есть: «Портфолио» — ссылка на «Наши проекты» и т.д.
-https://disk.yandex.ru/edit/d/7T3fDILW54olu3rKob0I6yPegnqahzm72s0qoIz-cKg6XzVUZ3NnYW9VUQ
-https://github.com/yoksel/common-words-->
 <html lang="ru">
     <head>
         <title>Марафон 5.0</title>
         <meta charset="utf-8">
+        <meta name="keywords" content="SCANDI, интерьер, уют, премиум, мебель, текстиль, аксессуары">
+        <meta name="description" content="предолжение по подбору интерьера">
     </head>
     <body>
         <header>
             <div>
-                <!--TODO добавить логотип-->
-                <span></span>
+                <span class="logo"></span>
                 SCANDI
             </div>
             <nav>
                 <ul>
-                    <li>О компании</li>
-                    <li>Портфолио</li>
-                    <li>Команда</li>
-                    <li>Как мы работаем</li>
-                    <li>Отзывы клиентов</li>
-                    <li>Оставить заявку</li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#algorithm">Как мы работаем</a></li>
+                    <li><a href="#feedback">Отзывы клиентов</a></li>
+                    <li><a href="#request">Оставить заявку</a></li>
                 </ul>
             </nav>
             <div>
-                <!--TODO поищи тэг телефон-->
-                +7(981)857-46-24
+                <a href="tel:+79818574624">+7(981)857-46-24</a>
             </div>
         </header>
         <main>
-            <!--Главная-->
             <section>
                 <h1>Поможем сделать вашу квартиру уютнее</h1>
                 <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
                 <div>
-                  <a>Оставить заявку</a>
+                  <a href="#request">Оставить заявку</a>
                 </div>
             </section>
-            <!--О нас-->
-            <section>
+            <section id="about">
               <h2>О нас</h2>
               <div>
-                <img src="images/still_life.png" alt="натюрморт" width="444" height="465"/>
+                <img src="images/still_life.png" alt="сервировка стола в премиальном стиле" width="444" height="465"/>
                 <div>
                   <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
                   <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»</p>
@@ -66,18 +58,17 @@ https://github.com/yoksel/common-words-->
                 </div>
               </div>
             </section>
-            <!--Работы-->
-            <section>
+            <section id="portfolio">
+                TODO
             </section>
-            <!--Команда -->
-            <section>
+            <section id="team">
               <div>
                 <h2>Команда</h2>
               </div>
               <div>
                 <div>
                   <figure>
-                    <img src="images/Masha.png" alt="Маша" width="320" height="253"/>
+                    <img src="images/Masha.png" alt="портрет Маши" width="320" height="253"/>
                     <figcaption>
                       <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
                     </figcaption>
@@ -85,7 +76,7 @@ https://github.com/yoksel/common-words-->
                 </div>
                 <div>
                   <figure>
-                    <img src="images/Sasha.png" alt="Маша" width="320" height="253"/>
+                    <img src="images/Sasha.png" alt="портрет Саши" width="320" height="253"/>
                     <figcaption>
                       <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
                     </figcaption>
@@ -93,7 +84,7 @@ https://github.com/yoksel/common-words-->
                 </div>
                 <div>
                   <figure>
-                    <img src="images/Katia.png" alt="Маша" width="320" height="253"/>
+                    <img src="images/Katia.png" alt="портрет Кати" width="320" height="253"/>
                     <figcaption>
                       <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
                     </figcaption>
@@ -101,7 +92,7 @@ https://github.com/yoksel/common-words-->
                 </div>
               </div>
             </section>
-            <section>
+            <section id="algorithm">
               <div>
                 <h2>Как мы работаем</h2>
               </div>
@@ -124,26 +115,24 @@ https://github.com/yoksel/common-words-->
                 </div>
               </div>
             </section>
-            <!--Отзывы-->
-            <section>
+            <section id="feedback">
               <h2>Отзывы</h2>
               <div>
                 <div></div>
-                <div>
+                <blockquote>
                     <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
                     <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
                     <p>Буду советовать и своим друзьям к вам обращаться!»</p>
-                    <p>АННА БЕЛОВСКАЯ</p>
+                    <cite>АННА БЕЛОВСКАЯ</cite>
                   <div>
                     <img src="images/example1.png" width="407" height="272" alt="пример комнаты"/>
                     <img src="images/example2.png" width="407" height="272" alt="пример кухни"/>
                   </div>
-                </div>
+                </blockquote>
                 <div></div>
               </div>
             </section>
-            <!--Заявка-->
-            <section>
+            <section id="request">
               <div>
                 <h2>Оставить заявку</h2>
                 <form action="#">
@@ -161,11 +150,10 @@ https://github.com/yoksel/common-words-->
             </section>
         </main>
         <footer>
-            <!--телефон-->
-            <div>+7(981)857-46-24</div>
-            <!--адрес-->
-            <div>г. Санкт-петербург, ул. Большая Конюшенная, 19</div>
-            <!--владелец-->
+            <div>
+                <a href="tel:+79818574624">+7(981)857-46-24</a>
+                <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+            </div>
             <div>ИП Королёва А.А.</div>
         </footer>
     </body>
